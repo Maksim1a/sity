@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Блочная верстка в HTML5</title>
+        <style>
+            div{
+                margin: 10px;
+                border: 1px solid black;
+                font-size: 20px;
+                height: 80px;
+            }
+            #header{ 
+                background-color: #ccc;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            #nav{
+                background-color: deeppink;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            #main{
+                background-color: #eee;
+                height: 200px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            .wrapper {
+                display: grid;
+                grid-template-columns: repeat(10, 100px);
+                grid-gap: 1px;
+                grid-auto-rows: 80px;
+                grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
+                grid-template-areas:
+                    "a a b b c c d d"
+                    "e e r r t t k k";
+                    border: 0px;
+                }
+                .item1 {
+                grid-area: a;
+                
+                }
+                .item2 {
+                grid-area: b;
+                }
+                .item3 {
+                grid-area: c;
+                }
+                .item4 {
+                grid-area: d;
+                }
+                .item2a {
+                grid-area: e;
+                }
+                .item2b {
+                grid-area: r;
+                }
+                .item2c {
+                grid-area: t;
+                }
+                .item2d {
+                grid-area: k;
+                }
+                #footer{ 
+                background-color: #ccc;
+                margin-left: 20px;
+                margin-right: 20px;
+                height: 150px;
+            }
+        </style>
+    <body>
+        <div id="header">
+           <h1>Шапка сайта</h1>
+        </div>
+        <div id="nav">
+            <h2>Меню сайта</h2>
+        </div>
+        <div class="wrapper">
+            <div class="item1">Item 1</div>
+            <div class="item2">Item 2</div>
+            <div class="item3">Item 3</div>
+            <div class="item4">Item 4</div>
+            <div class="item2a">Item 2a</div>
+            <div class="item2b">Item 2b</div>
+            <div class="item2c">Item 2c</div>
+            <div class="item2d">Item 2d</div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        <div id="main"></div>
+        <div id="footer"></div>
+    </body>
+</html>
