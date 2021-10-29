@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Блочная верстка в HTML5</title>
+        <style>
+            div{
+
+                margin: 10px;
+                border: 1px solid black;
+                font-size: 20px;
+                height: 80px;
+            }
+            #header{ 
+                background-color: #ccc;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            #nav{
+                background-color: deeppink;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            #main{
+                background-color: #eee;
+                height: 200px;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            #aside{
+                float: left;
+                width: 200px;
+                height: 180px;
+                border-color: deepskyblue;
+                margin-left: 40px;
+
+            }
+            #content{
+                float: right;
+                width: 670px;
+                height: 180px;
+                border-color: fuchsia;
+                margin-right: 40px;
+            }
+            #footer{ 
+                background-color: #ccc;
+                margin-left: 30px;
+                margin-right: 30px;
+                height: 150px;
+            }
+        </style>
+    <body>
+        <div id="header">
+           <h1>Шапка сайта</h1>
+        </div>
+        <div id="nav">
+            <h2>Меню сайта</h2>
+        </div>
+        <div id="aside">о языке css</div>
+        <div id="content">css - это язык оформления HTML-документов. За более подробной информацией сюда. Так он является вспомогательным языеом,<br>
+            то существует несколько основных способов его добавления на web-страницу:</div>
+        <div id="main"></div>
+        <div id="footer">Footer прижимается вниз за счет вытягивания блока контента и его «родителей» на всю высоту окна браузера и подъема футера<br>
+             вверх через отрицательный отступ (margin-top) для избавления от появляющегося при этом вертикального скролла.</div>
+    </body>
+</html>
